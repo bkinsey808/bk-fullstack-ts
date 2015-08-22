@@ -1,0 +1,36 @@
+{
+  "name": "bk-fullstack-ts",
+  "version": "0.0.0",
+  "description": "A fullstack typescript demo with angular2, sass3, express4, and gulp3.",
+  "keywords": [
+    "typescript",
+    "ts",
+    "express",
+    "express4",
+    "angular2",
+    "ng2",
+    "node",
+    "fullstack",
+    "gulp",
+    "node",
+    "sass",
+    "sass3"
+  ],
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Kinsey",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-watch": "^4.3.5",
+    "run-sequence": "^1.1.2"
+  }
+}
