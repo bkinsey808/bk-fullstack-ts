@@ -12,3 +12,5 @@ This is a simple demo how to setup a project that uses Express 4, Angular 2, Sas
 4. run `gulp`
 5. run the server with `node dist/server.js`
 6. The server is listening by default on `http://localhost:3000`
+
+I would like to give credit to https://github.com/mbalex99/newfamily-example which helped with some ideas.
