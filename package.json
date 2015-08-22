@@ -16,6 +16,10 @@
     "sass",
     "sass3"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bkinsey808/bk-fullstack-ts"
+  },
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
