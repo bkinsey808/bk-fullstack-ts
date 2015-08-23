@@ -9,7 +9,7 @@ var app : express.Express = express();
 
 app.set('view engine', 'html'); // so you can render('index')
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/api/books', (req, res) => {
 	res.send({
