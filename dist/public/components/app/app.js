@@ -1,4 +1,4 @@
-/// <reference path="../../../typings/angular2/angular2.d.ts" />
+/// <reference path="/typings/angular2/angular2.d.ts" />
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
     switch (arguments.length) {
@@ -11,19 +11,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var Child = (function () {
-    function Child() {
-        this.name = 'yayayayay!!!';
+var child_1 = require('components/child/child');
+var App = (function () {
+    function App() {
+        this.name = 'My name';
     }
-    Child = __decorate([
+    App = __decorate([
         angular2_1.Component({
-            selector: 'child'
+            selector: 'app'
         }),
         angular2_1.View({
-            templateUrl: 'child/child.html'
+            templateUrl: 'components/app/app.html',
+            directives: [
+                child_1.Child
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], Child);
-    return Child;
+    ], App);
+    return App;
 })();
-exports.Child = Child;
+angular2_1.bootstrap(App);

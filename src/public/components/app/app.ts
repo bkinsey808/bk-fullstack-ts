@@ -1,13 +1,13 @@
-/// <reference path="../../../typings/angular2/angular2.d.ts" />
+/// <reference path="/typings/angular2/angular2.d.ts" />
 
 import { Component, View, bootstrap } from 'angular2/angular2';
-import { Child } from 'child/child';
+import { Child } from 'components/child/child';
 
 @Component({
   selector: 'app'
 })
 @View({
-  templateUrl: 'app/app.html',
+  templateUrl: 'components/app/app.html',
   directives: [
     Child
   ]
@@ -16,7 +16,7 @@ import { Child } from 'child/child';
 class App {
   name: string;
   constructor() {
-    this.name = 'Alice yo';
+    this.name = 'My name';
   }
 }
 
