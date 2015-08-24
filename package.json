@@ -36,5 +36,20 @@
     "gulp-sass": "^2.0.4",
     "gulp-watch": "^4.3.5",
     "run-sequence": "^1.1.2"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "dist/public"
+    },
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-alpha.35",
+      "es6-shim": "github:es-shims/es6-shim@^0.33.1",
+      "jmcriffey/bower-traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.91",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.0",
+      "zone.js": "npm:zone.js@^0.5.3"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.0-dev.20150818"
+    }
   }
 }

@@ -1,5 +1,9 @@
 /// <reference path="/typings/angular2/angular2.d.ts" />
 
+//import deps
+import 'zone.js';
+import 'reflect-metadata';
+
 import { Component, View, bootstrap } from 'angular2/angular2';
 import { Child } from 'components/child/child';
 

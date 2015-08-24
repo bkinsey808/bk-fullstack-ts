@@ -1,0 +1,68 @@
+{
+  "name": "buffer-xor",
+  "version": "1.0.2",
+  "description": "buffer-xor",
+  "main": "index.js",
+  "scripts": {
+    "standard": "standard",
+    "test": "npm run-script unit",
+    "unit": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypto-browserify/buffer-xor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crypto-browserify/buffer-xor/issues"
+  },
+  "homepage": "https://github.com/crypto-browserify/buffer-xor",
+  "keywords": [
+    "bits",
+    "bitwise",
+    "buffer",
+    "buffer-xor",
+    "crypto",
+    "inline",
+    "math",
+    "memory",
+    "performance",
+    "xor"
+  ],
+  "author": {
+    "name": "Daniel Cousens"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "*",
+    "standard": "*"
+  },
+  "gitHead": "79c37eb7669b62639b0f4b018aaf155e72d7e204",
+  "_id": "buffer-xor@1.0.2",
+  "_shasum": "231e44571f644bde0789026f61de6e923167124a",
+  "_from": ".",
+  "_npmVersion": "2.9.0",
+  "_nodeVersion": "0.12.3",
+  "_npmUser": {
+    "name": "dcousens",
+    "email": "email@dcousens.com"
+  },
+  "maintainers": [
+    {
+      "name": "dcousens",
+      "email": "email@dcousens.com"
+    }
+  ],
+  "dist": {
+    "shasum": "231e44571f644bde0789026f61de6e923167124a",
+    "tarball": "http://registry.npmjs.org/buffer-xor/-/buffer-xor-1.0.2.tgz"
+  },
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {
+    "buffer": "github:jspm/nodelibs-buffer@^0.1.0",
+    "systemjs-json": "github:systemjs/plugin-json@^0.1.0"
+  }
+}

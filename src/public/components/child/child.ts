@@ -1,5 +1,9 @@
 /// <reference path="typings/angular2/angular2.d.ts" />
 
+//import deps
+import 'zone.js';
+import 'reflect-metadata';
+
 import { Component, View, bootstrap } from 'angular2/angular2';
 import { API } from '../../services/api';
 
@@ -21,11 +25,12 @@ export class Child {
     this.name = 'yayayayay!!!';
     this.books = [];
 
-    api.getBooks()
+/*    api.getBooks()
     .then(r => r.json())
     .then(r => {
        this.books = r;
        console.log(this.books);
     });
+    */
   }
 }

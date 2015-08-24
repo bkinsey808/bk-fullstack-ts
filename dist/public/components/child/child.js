@@ -10,19 +10,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+require('zone.js');
+require('reflect-metadata');
 var angular2_1 = require('angular2/angular2');
 var api_1 = require('../../services/api');
 var Child = (function () {
     function Child(api) {
-        var _this = this;
         this.name = 'yayayayay!!!';
         this.books = [];
-        api.getBooks()
-            .then(function (r) { return r.json(); })
-            .then(function (r) {
-            _this.books = r;
-            console.log(_this.books);
-        });
     }
     Child = __decorate([
         angular2_1.Component({
