@@ -1,7 +1,7 @@
 {
   "name": "bk-fullstack-ts",
   "version": "0.0.0",
-  "description": "A fullstack typescript demo with angular2, sass3, express4, and gulp3.",
+  "description": "A fullstack typescript demo with angular2, sass3, jspm, express4, and gulp3.",
   "keywords": [
     "typescript",
     "ts",
@@ -14,7 +14,8 @@
     "gulp",
     "node",
     "sass",
-    "sass3"
+    "sass3",
+    "jspm"
   ],
   "repository": {
     "type": "git",
@@ -33,8 +34,8 @@
     "gulp": "^3.9.0",
     "gulp-changed": "^1.3.0",
     "gulp-concat-css": "^2.2.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
-    "gulp-ts": "^0.2.0",
     "gulp-typescript": "^2.8.1",
     "gulp-watch": "^4.3.5",
     "run-sequence": "^1.1.2"
