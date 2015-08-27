@@ -63,8 +63,8 @@
   "registry": "npm",
   "dependencies": {
     "inherits": "inherits@^2.0.1",
+    "buffer": "github:jspm/nodelibs-buffer@^0.1.0",
     "fs": "github:jspm/nodelibs-fs@^0.1.0",
-    "process": "github:jspm/nodelibs-process@^0.1.0",
-    "buffer": "github:jspm/nodelibs-buffer@^0.1.0"
+    "process": "github:jspm/nodelibs-process@^0.1.0"
   }
 }

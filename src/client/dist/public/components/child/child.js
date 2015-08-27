@@ -11,14 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 //import deps
-//import 'zone.js';
-//import 'reflect-metadata';
+require('zone.js');
+require('reflect-metadata');
 var angular2_1 = require('angular2/angular2');
-//import { API } from '../../services/api';
+var api_1 = require('../../services/api');
 // Annotation section
 var Child = (function () {
-    function Child() {
-        this.name = 'YAY!!!!!';
+    function Child(api) {
+        this.name = 'yayaya !!!g ';
         this.books = [];
         /*    api.getBooks()
             .then(r => r.json())
@@ -30,13 +30,14 @@ var Child = (function () {
     }
     Child = __decorate([
         angular2_1.Component({
-            selector: 'child' //,
+            selector: 'child',
+            bindings: [api_1.API]
         }),
         angular2_1.View({
             // this is a hack to bust the cache. Is there a better way to do this?
             templateUrl: 'components/child/child.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [api_1.API])
     ], Child);
     return Child;
 })();

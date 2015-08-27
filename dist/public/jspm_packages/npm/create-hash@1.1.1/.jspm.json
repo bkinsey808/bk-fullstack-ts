@@ -70,8 +70,8 @@
     "inherits": "inherits@^2.0.1",
     "ripemd160": "ripemd160@^1.0.0",
     "sha.js": "sha.js@^2.3.6",
-    "stream": "github:jspm/nodelibs-stream@^0.1.0",
     "buffer": "github:jspm/nodelibs-buffer@^0.1.0",
+    "stream": "github:jspm/nodelibs-stream@^0.1.0",
     "fs": "github:jspm/nodelibs-fs@^0.1.0",
     "crypto": "github:jspm/nodelibs-crypto@^0.1.0"
   }

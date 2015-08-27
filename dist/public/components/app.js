@@ -1,4 +1,4 @@
-/// <reference path="/typings/angular2/angular2.d.ts" />
+/// <reference path="../../../typings/angular2/angular2.d.ts" />
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
     switch (arguments.length) {
@@ -10,13 +10,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-require('zone.js');
-require('reflect-metadata');
+//import deps
+//import 'zone.js';
+//import 'reflect-metadata';
 var angular2_1 = require('angular2/angular2');
 var child_1 = require('components/child/child');
 var App = (function () {
     function App() {
-        this.name = 'My name';
+        this.name = 'World';
     }
     App = __decorate([
         angular2_1.Component({

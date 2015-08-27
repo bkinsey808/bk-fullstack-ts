@@ -1,9 +1,9 @@
-/// <reference path="/typings/tsd.d.ts" />
-/// <reference path="/typings/node/node.d.ts"/>
-/// <reference path="/typings/express/express.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts" />
+/// <reference path="../../typings/node/node.d.ts"/>
+/// <reference path="../../typings/express/express.d.ts"/>
 var express = require('express');
 var app = express();
-app.set('view engine', 'html');
+app.set('view engine', 'html'); // so you can render('index')
 app.use(express.static(__dirname + '/public'));
 app.get('/api/books', function (req, res) {
     res.send({

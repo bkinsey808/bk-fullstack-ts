@@ -1,6 +1,6 @@
 /* */ 
 var test = require("tape");
-var vm = require("../../vm-browserify@0.0.4");
+var vm = require("../index");
 test('vmRunInNewContext', function(t) {
   t.plan(6);
   t.equal(vm.runInNewContext('a + 5', {a: 100}), 105);
