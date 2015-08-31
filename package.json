@@ -45,6 +45,7 @@
       "baseURL": "dist/public"
     },
     "dependencies": {
+      "angular/zone.js": "github:angular/zone.js@^0.5.3",
       "angular2": "npm:angular2@^2.0.0-alpha.35",
       "reflect-metadata": "npm:reflect-metadata@^0.1.0",
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@^0.0.91"

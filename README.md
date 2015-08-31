@@ -17,7 +17,7 @@ This is a simple demo how to setup a project that uses Express 4, Angular 2, Sas
 2. The server is listening by default on `http://localhost:3000`
 
 ## Deploy into production
-1. run `jspm bundle app/main main-bundle.js --inject`
+1. run `jspm bundle components/app --inject`
 
 ## Hack the code
 1. run `jspm unbundle`

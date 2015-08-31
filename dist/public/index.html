@@ -1,8 +1,6 @@
 <html>
   <head>
     <title>bk-fullstack-ts</title>
-    <!--<script src="https://jspm.io/system@0.16.11.js"></script>-->
-    <!--<script src="https://code.angularjs.org/2.0.0-alpha.35/angular2.dev.js"></script>-->
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <link rel="stylesheet" type="text/css" href="app.css">
@@ -10,22 +8,13 @@
   <body>
     <app>Loading...</app>
     <script>
-    // angular2 based on es6-module
-    System.import('traceur-runtime')
+      // angular2 based on es6-module
+      System.import('traceur-runtime');
 
-    // use metadata for annotation
-    System.import('reflect-metadata')
+      // use metadata for annotation
+      System.import('reflect-metadata');
 
-    // for route
-//    System.import('url')
-
-    // for detect change
-//    System.import('zone.js')
-
-    // bootstrap
-//    System.import('bootstrap')
-
-
+      // application
       System.import('components/app');
     </script>
   </body>
