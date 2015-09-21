@@ -8,13 +8,14 @@ var ts          = require('gulp-typescript');
 var rename      = require("gulp-rename");
 
 gulp.task('default', function(callback) {
-  runSequence([
-    'html:watch',
-    'sass:watch',
-    'clientTypeScript:watch',
-    'serverTypeScript:watch'
-  ], // run these in parallel
-  callback);
+  runSequence(
+    [
+      'html:watch',
+      'sass:watch',
+      'clientTypeScript:watch',
+      'serverTypeScript:watch'
+    ], // run these in parallel
+    callback);
 });
 
 gulp.task('html', function () {
@@ -62,9 +63,10 @@ gulp.task('serverTypeScript', function () {
       experimentalDecorators: true,
       target: 'es5'
     })).js
-    // not sure why this rename is necessary. For some reason gulp-typescript
-    // makes the path to be the path of the whole project in my testing,
-    // and I haven't seen an obvious config option to get the behavior I want.
+    // I'm not sure why this rename is necessary. 
+    // For some reason gulp-typescript makes the path to be the 
+    // path of the whole project in my testing, and I haven't 
+    // seen an obvious config option to get the behavior I want.
     .pipe(rename(function (path) {
       path.dirname = '';
     }))

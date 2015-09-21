@@ -38,20 +38,21 @@
     "gulp-sass": "^2.0.4",
     "gulp-typescript": "^2.8.1",
     "gulp-watch": "^4.3.5",
-    "run-sequence": "^1.1.2"
+    "run-sequence": "^1.1.2",
+    "jspm": "~0.16.6"
   },
   "jspm": {
     "directories": {
       "baseURL": "dist/public"
     },
     "dependencies": {
-      "angular/zone.js": "github:angular/zone.js@^0.5.3",
-      "angular2": "npm:angular2@^2.0.0-alpha.35",
-      "reflect-metadata": "npm:reflect-metadata@^0.1.0",
+      "angular/zone.js": "github:angular/zone.js@^0.5.5",
+      "angular2": "npm:angular2@^2.0.0-alpha.37",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.1",
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@^0.0.91"
     },
     "devDependencies": {
-      "typescript": "npm:typescript@^1.6.0-dev.20150818"
+      "typescript": "npm:typescript@^1.6.2"
     }
   }
 }
