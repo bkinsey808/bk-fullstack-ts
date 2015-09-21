@@ -23,7 +23,4 @@ This is a simple demo how to setup a project that uses Express 4, Angular 2, Sas
 1. run `jspm unbundle`
 2. run `gulp`
 
-In order to get jspm working, I had to break my ajax and dependency injection.
-Will work on a fix when I get a chance.
-
 I would like to give credit to https://github.com/mbalex99/newfamily-example which helped with some ideas.
