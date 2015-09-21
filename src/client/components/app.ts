@@ -5,7 +5,7 @@
 //import 'reflect-metadata';
 
 import { Component, View, bootstrap } from 'angular2/angular2';
-import { Child } from 'components/child/child';
+import { Child } from './child/child';
 
 @Component({
   selector: 'app'

@@ -14,7 +14,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 //import 'zone.js';
 //import 'reflect-metadata';
 var angular2_1 = require('angular2/angular2');
-var child_1 = require('components/child/child');
+var child_1 = require('./child/child');
 var App = (function () {
     function App() {
         this.name = 'World';
