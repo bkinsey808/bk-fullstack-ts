@@ -1,4 +1,3 @@
-/// <reference path="../../../../typings/angular2/angular2.d.ts" />
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
     switch (arguments.length) {
@@ -11,30 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var api_1 = require('../../services/api');
-// Annotation section
-var Child = (function () {
-    function Child(api) {
-        var _this = this;
-        this.name = 'YAY!!!!!';
-        this.books = [];
-        api.getBooks()
-            .then(function (r) { return r.json(); })
-            .then(function (r) {
-            _this.books = r;
-            console.log(_this.books);
-        });
+var About = (function () {
+    function About() {
+        console.log('about');
     }
-    Child = __decorate([
+    About = __decorate([
         angular2_1.Component({
-            selector: 'child',
-            bindings: [api_1.API]
+            selector: 'app-menu'
         }),
         angular2_1.View({
-            templateUrl: 'components/child/child.html'
+            templateUrl: 'components/main/about/about.html'
         }), 
-        __metadata('design:paramtypes', [api_1.API])
-    ], Child);
-    return Child;
+        __metadata('design:paramtypes', [])
+    ], About);
+    return About;
 })();
-exports.Child = Child;
+exports.About = About;

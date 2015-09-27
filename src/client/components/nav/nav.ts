@@ -1,21 +1,24 @@
-/// <reference path="../../../../typings/angular2/angular2.d.ts" />
-
-import { Component, View, bootstrap } from 'angular2/angular2';
+import { Component, View } from 'angular2/angular2';
+import { RouterLink } from 'angular2/router';
 import { API } from '../../services/api';
+import { Home } from '../main/home/home';
+import { About } from '../main/about/about';
 
-// Annotation section
 @Component({
-  selector: 'child',
+  selector: 'app-nav',
   bindings: [API]
 })
 @View({
-  templateUrl: 'components/child/child.html'
+  templateUrl: 'components/nav/nav.html',
+  directives: [RouterLink]
 })
-export class Child {
+
+export class Nav {
   name: string;
   books: Array<any>;
 
   constructor(api: API) {
+    console.log('menu');
     this.name = 'YAY!!!!!';
     this.books = [];
 
