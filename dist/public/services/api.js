@@ -1,8 +1,8 @@
 var API = (function () {
     function API() {
     }
-    API.prototype.getBooks = function () {
-        return fetch('http://localhost:3000/api/books');
+    API.prototype.getNavItems = function () {
+        return fetch('http://localhost:3000/api/nav_items');
     };
     return API;
 })();

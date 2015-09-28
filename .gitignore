@@ -1,5 +1,5 @@
 node_modules/
 typings/
-dist/public/jspm_packages/
+dist/
 *#
 .tern-port

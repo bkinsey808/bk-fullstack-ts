@@ -3,19 +3,19 @@
 /// <reference path="../../typings/express/express.d.ts"/>
 
 import express = require('express');
-import path = require('path');
+import path    = require('path');
 
 var app : express.Express = express();
 
-app.set('view engine', 'html'); // so you can render('index')
+//app.set('view engine', 'html'); // so you can render('index')
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/api/books', (req, res) => {
+app.get('/api/nav_items', (req, res) => {
 	res.send({
 		data: [
-			'book 1',
-			'book 2'
+			'Home',
+			'About'
 		]
 	});
 });

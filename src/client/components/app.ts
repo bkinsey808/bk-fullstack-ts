@@ -4,13 +4,13 @@
 
 import { bind, Component, View, bootstrap } from 'angular2/angular2';
 import { HTTP_BINDINGS } from 'angular2/http';
-import { ROUTER_DIRECTIVES, ROUTER_BINDINGS, LocationStrategy, HashLocationStrategy,
-         RouteConfig
+import { ROUTER_DIRECTIVES, ROUTER_BINDINGS, RouteConfig,
+         LocationStrategy, HashLocationStrategy
        } from 'angular2/router';
 import { Header } from './header/header';
-import { Nav } from './nav/nav';
-import { Home } from './main/home/home';
-import { About } from './main/about/about';
+import { Nav    } from './nav/nav';
+import { Home   } from './main/home/home';
+import { About  } from './main/about/about';
 
 @Component({
   selector: 'app'
@@ -22,18 +22,21 @@ import { About } from './main/about/about';
     Nav,
     Home,
     About,
-    ROUTER_DIRECTIVES
+    ROUTER_DIRECTIVES // Do I need all of this?
   ]
 })
 @RouteConfig([
-  { path: '/', as: 'home', component: Home },
+  //      URL           state               class
+  { path: '/',      as: 'home',  component: Home },
   { path: '/about', as: 'about', component: About }
 ])
 class App {
   name: string;
   constructor() {
     this.name = 'World';
+    console.log('app works ');
   }
 }
 
+// How do I do html5mode without hash urls?
 bootstrap(App, [HTTP_BINDINGS,ROUTER_BINDINGS, bind(LocationStrategy).toClass(HashLocationStrategy)]);

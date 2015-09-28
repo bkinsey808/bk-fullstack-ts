@@ -17,12 +17,12 @@ var Nav = (function () {
         var _this = this;
         console.log('menu');
         this.name = 'YAY!!!!!';
-        this.books = [];
-        api.getBooks()
+        this.navItems = [];
+        api.getNavItems()
             .then(function (r) { return r.json(); })
             .then(function (r) {
-            _this.books = r;
-            console.log(_this.books);
+            _this.navItems = r;
+            console.log(_this.navItems);
         });
     }
     Nav = __decorate([

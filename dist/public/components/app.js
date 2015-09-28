@@ -22,6 +22,7 @@ var about_1 = require('./main/about/about');
 var App = (function () {
     function App() {
         this.name = 'World';
+        console.log('app works ');
     }
     App = __decorate([
         angular2_1.Component({
@@ -34,10 +35,11 @@ var App = (function () {
                 nav_1.Nav,
                 home_1.Home,
                 about_1.About,
-                router_1.ROUTER_DIRECTIVES
+                router_1.ROUTER_DIRECTIVES // Do I need all of this?
             ]
         }),
         router_1.RouteConfig([
+            //      URL           state               class
             { path: '/', as: 'home', component: home_1.Home },
             { path: '/about', as: 'about', component: about_1.About }
         ]), 
@@ -45,4 +47,5 @@ var App = (function () {
     ], App);
     return App;
 })();
+// How do I do html5mode without hash urls?
 angular2_1.bootstrap(App, [http_1.HTTP_BINDINGS, router_1.ROUTER_BINDINGS, angular2_1.bind(router_1.LocationStrategy).toClass(router_1.HashLocationStrategy)]);

@@ -14,19 +14,19 @@ import { About } from '../main/about/about';
 })
 
 export class Nav {
-  name: string;
-  books: Array<any>;
+  name:     string;
+  navItems: Array<any>;
 
   constructor(api: API) {
     console.log('menu');
     this.name = 'YAY!!!!!';
-    this.books = [];
+    this.navItems = [];
 
-    api.getBooks()
+    api.getNavItems()
     .then(r => r.json())
     .then(r => {
-       this.books = r;
-       console.log(this.books);
+       this.navItems = r;
+       console.log(this.navItems);
     });
 
   }
