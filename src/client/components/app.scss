@@ -1,0 +1,45 @@
+app {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+header, footer {
+ flex: none;
+}
+
+app-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: 10px 0 10px 0;
+}
+
+main {
+  margin-top: 10px;
+}
+
+header, footer, nav, aside {
+  padding: 1em;
+  border-radius: 3px;
+  background: rgba(147, 128, 108, 0.1);
+}
+
+nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+@media (min-width: 500px) {
+  app-body {
+    flex-direction: row;
+  }
+  main {
+    flex: 1;
+    padding: 0 15px;
+    margin: 0;
+  }
+  nav, aside {
+    flex: 0 0 6em;
+  }
+}

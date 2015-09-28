@@ -4,11 +4,14 @@
 
 import { bind, Component, View, bootstrap } from 'angular2/angular2';
 import { HTTP_BINDINGS } from 'angular2/http';
-import { ROUTER_DIRECTIVES, ROUTER_BINDINGS, RouteConfig,
+import { ROUTER_BINDINGS, RouteConfig,
          LocationStrategy, HashLocationStrategy
        } from 'angular2/router';
 import { Header } from './header/header';
 import { Nav    } from './nav/nav';
+import { Aside  } from './aside/aside';
+import { Footer } from './footer/footer';
+import { Body   } from './body/body';
 import { Home   } from './main/home/home';
 import { About  } from './main/about/about';
 
@@ -20,9 +23,9 @@ import { About  } from './main/about/about';
   directives: [
     Header,
     Nav,
-    Home,
-    About,
-    ROUTER_DIRECTIVES // Do I need all of this?
+    Aside,
+    Body,
+    Footer
   ]
 })
 @RouteConfig([
@@ -39,4 +42,4 @@ class App {
 }
 
 // How do I do html5mode without hash urls?
-bootstrap(App, [HTTP_BINDINGS,ROUTER_BINDINGS, bind(LocationStrategy).toClass(HashLocationStrategy)]);
+bootstrap(App, [HTTP_BINDINGS, ROUTER_BINDINGS, bind(LocationStrategy).toClass(HashLocationStrategy)]);

@@ -14,6 +14,9 @@
     ],
     "files": [
         "./src/client/components/app.ts",
+        "./src/client/components/aside/aside.ts",
+        "./src/client/components/body/body.ts",
+        "./src/client/components/footer/footer.ts",
         "./src/client/components/header/header.ts",
         "./src/client/components/main/about/about.ts",
         "./src/client/components/main/home/home.ts",
