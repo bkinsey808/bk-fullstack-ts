@@ -71,13 +71,6 @@ gulp.task('serverTypeScript', function () {
       experimentalDecorators: true,
       target: 'es5'
     })).js
-    // I'm not sure why this rename is necessary.
-    // For some reason gulp-typescript makes the path to be the
-    // path of the whole project in my testing, and I haven't
-    // seen an obvious config option to get the behavior I want.
-    //    .pipe(rename(function (path) {
-//      path.dirname = '';
-//    }))
     .pipe(gulp.dest('dist'));
 });
 
