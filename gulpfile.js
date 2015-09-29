@@ -23,7 +23,7 @@ gulp.task('build', function(callback) {
     [
       'html',
       'sass',
-      'clientJavaScript', // currently only for jspm_config.js
+      'clientJavaScript', // currently only for config.js
       'clientTypeScript',
       'serverTypeScript'
     ],
@@ -81,7 +81,7 @@ gulp.task('watch', function(callback) {
     [
       'html:watch',
       'sass:watch',
-      'clientJavaScript:watch', // currently only for jspm_config.js
+      'clientJavaScript:watch', // currently only for config.js
       'clientTypeScript:watch',
       'serverTypeScript:watch'
     ],
