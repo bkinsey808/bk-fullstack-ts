@@ -10,6 +10,7 @@ This is a simple demo how to setup a project that uses Express 4, Angular 2, Sas
 2. cd into the directory
 3. run `npm i`
 4. run `tsd install`
+4. run `gulp build`
 5. run `jspm i`
 
 ## Run the Server
