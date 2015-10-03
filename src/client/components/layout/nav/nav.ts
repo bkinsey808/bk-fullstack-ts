@@ -1,15 +1,15 @@
 import { Component, View } from 'angular2/angular2';
 import { RouterLink } from 'angular2/router';
-import { API } from '../../services/api';
-import { Home } from '../main/home/home';
-import { About } from '../main/about/about';
+import { API } from '../../../services/api';
+import { Home } from '../../content/home/home';
+import { About } from '../../content/about/about';
 
 @Component({
   selector: 'app-nav',
   bindings: [API]
 })
 @View({
-  templateUrl: 'components/nav/nav.html',
+  templateUrl: 'components/layout/nav/nav.html',
   directives: [RouterLink]
 })
 
