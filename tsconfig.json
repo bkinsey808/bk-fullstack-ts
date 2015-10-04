@@ -13,7 +13,6 @@
         "!./dist/**/*.ts"
     ],
     "files": [
-        "./src/client/api/api.service.ts",
         "./src/client/app/app.component.ts",
         "./src/client/content/about/about.component.ts",
         "./src/client/content/home/home.component.ts",
@@ -22,6 +21,7 @@
         "./src/client/layout/footer/footer.component.ts",
         "./src/client/layout/header/header.component.ts",
         "./src/client/layout/nav/nav.component.ts",
+        "./src/client/layout/nav/nav.service.ts",
         "./src/server/server.ts",
         "./typings/angular2/angular2.d.ts",
         "./typings/angular2/http.d.ts",
