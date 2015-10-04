@@ -4,9 +4,9 @@ import { Component, View, bootstrap } from 'angular2/angular2';
   selector: 'app-menu'
 })
 @View({
-  templateUrl: 'components/content/about/about.html'
+  templateUrl: 'content/about/about.html'
 })
-export class About {
+export class AboutComponent {
   constructor() {
     console.log('about');
   }

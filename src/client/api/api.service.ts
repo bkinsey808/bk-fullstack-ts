@@ -1,6 +1,6 @@
 declare var fetch, Zone;
 
-export class API {
+export class ApiService {
   getNavItems() {
     return fetch('http://localhost:3000/api/nav_items');
   }

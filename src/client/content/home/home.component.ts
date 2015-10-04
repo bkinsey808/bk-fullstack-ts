@@ -4,9 +4,9 @@ import { Component, View } from 'angular2/angular2';
   selector: 'home'
 })
 @View({
-  templateUrl: 'components/content/home/home.html'
+  templateUrl: 'content/home/home.html'
 })
-export class Home {
+export class HomeComponent {
   constructor() {
     name='HOME';
     console.log('homeie');

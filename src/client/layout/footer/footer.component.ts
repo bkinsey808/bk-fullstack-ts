@@ -4,9 +4,9 @@ import { Component, View } from 'angular2/angular2';
   selector: 'app-footer'
 })
 @View({
-  templateUrl: 'components/layout/footer/footer.html'
+  templateUrl: 'layout/footer/footer.html'
 })
-export class Footer {
+export class FooterComponent {
   constructor() {
     console.log('footer');
   }
