@@ -9,7 +9,7 @@ import { AboutComponent } from '../../content/about/about.component';
   bindings: [ApiService]
 })
 @View({
-  templateUrl: 'components/layout/nav/nav.html',
+  templateUrl: 'layout/nav/nav.html',
   directives: [RouterLink]
 })
 
