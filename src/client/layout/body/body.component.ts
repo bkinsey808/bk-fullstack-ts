@@ -9,7 +9,7 @@ import { AboutComponent  } from '../../content/about/about.component';
   selector: 'app-body'
 })
 @View({
-  templateUrl: 'layout/body/body.html',
+  templateUrl: 'layout/body/body.template.html',
   directives: [
     NavComponent,
     AsideComponent,

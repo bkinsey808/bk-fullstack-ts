@@ -11,17 +11,17 @@ var app : express.Express = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/api/nav_items', (req, res) => {
-	res.send({
-		data: [
-			'Home',
-			'About'
-		]
-	});
+app.get('/api/nav', (req, res) => {
+    res.send({
+        data: [
+            'Home',
+            'About'
+        ]
+    });
 });
 
 var port: number = process.env.PORT || 3000;
 var server = app.listen(port, () => {
-	var listeningPort: number = server.address().port;
-	console.log('The server is listening on port: ' + listeningPort);
+    var listeningPort: number = server.address().port;
+    console.log(`The server is listening on port: ${listeningPort}`);
 });

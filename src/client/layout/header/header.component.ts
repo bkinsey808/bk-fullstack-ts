@@ -4,7 +4,7 @@ import { Component, View } from 'angular2/angular2';
   selector: 'app-header'
 })
 @View({
-  templateUrl: 'layout/header/header.html'
+  templateUrl: 'layout/header/header.template.html'
 })
 export class HeaderComponent {
   constructor() {

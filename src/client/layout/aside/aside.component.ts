@@ -4,7 +4,7 @@ import { Component, View } from 'angular2/angular2';
   selector: 'app-aside'
 })
 @View({
-  templateUrl: 'layout/aside/aside.html'
+  templateUrl: 'layout/aside/aside.template.html'
 })
 export class AsideComponent {
   constructor() {

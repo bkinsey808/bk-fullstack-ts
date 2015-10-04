@@ -1,5 +1,5 @@
 System.config({
-  configFile: "jspm-config.js",
+  configFile: "config.js",
   baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
