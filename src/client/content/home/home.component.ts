@@ -4,7 +4,7 @@ import { Component, View } from 'angular2/angular2';
   selector: 'home'
 })
 @View({
-  templateUrl: 'content/home/home.template.html'
+  templateUrl: 'content/home/home.html'
 })
 export class HomeComponent {
   constructor() {

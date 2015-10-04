@@ -1,15 +1,15 @@
 import { Component, View } from 'angular2/angular2';
 import { RouterLink } from 'angular2/router';
-import { NavService } from './nav.service';
+import { ApiService } from '../../api/api.service';
 import { HomeComponent } from '../../content/home/home.component';
 import { AboutComponent } from '../../content/about/about.component';
 
 @Component({
   selector: 'app-nav',
-  bindings: [NavService]
+  bindings: [ApiService]
 })
 @View({
-  templateUrl: 'layout/nav/nav.template.html',
+  templateUrl: 'layout/nav/nav.html',
   directives: [RouterLink]
 })
 
@@ -17,12 +17,12 @@ export class NavComponent {
   name:     string;
   navItems: Array<any>;
 
-  constructor(api: NavService) {
+  constructor(apiService: ApiService) {
     console.log('menu');
     this.name = 'YAY!!!!!';
     this.navItems = [];
 
-    api.get()
+    apiService.getNavItems()
     .then(r => r.json())
     .then(r => {
        this.navItems = r;
