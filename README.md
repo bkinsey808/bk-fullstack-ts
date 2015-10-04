@@ -38,7 +38,7 @@ Alternatively, for Linux based operating systems you can run `./scripts/hack.sh`
 This causes jspm to unbundle, which makes hacking the code (developing) easier because
 only individual files need to be transpiled and built, and not the whole project.
 
-##credits
+##Credits
 
 Thank you [@mpint](https://github.com/mpint) for an awesome [pull request](https://github.com/bkinsey808/bk-fullstack-ts/pull/9)
 now this project includes support for scss partials, better file conventions, and other fixes.
