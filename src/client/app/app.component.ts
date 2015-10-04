@@ -19,7 +19,7 @@ import { AboutComponent  } from '../content/about/about.component';
   selector: 'app'
 })
 @View({
-  templateUrl: 'components/app/app.html',
+  templateUrl: 'app/app.template.html',
   directives: [
     HeaderComponent,
     NavComponent,

@@ -1,5 +1,5 @@
 System.config({
-  configFile: "jspm-config.js",
+  configFile: "config.js",
   baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
@@ -11,8 +11,8 @@ System.config({
 
   packages: {
     "app": {
-      "main": "app.component.ts",
-      "defaultExtension": "ts"
+      "main": "app.component",
+      "defaultExtension": "js"
     }
   },
 
