@@ -11,8 +11,8 @@ System.config({
 
   packages: {
     "app": {
-      "main": "app.component.ts",
-      "defaultExtension": "ts"
+      "main": "app.component",
+      "defaultExtension": "js"
     }
   },
 
