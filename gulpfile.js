@@ -37,7 +37,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('src/client/**/*.scss')
+  return gulp.src('src/client/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concatCss('build.css'))
     .pipe(gulp.dest('dist/public'));
