@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-This is a simple demo how to setup a project that uses Express 4, Angular 2, Sass 3, Gulp 3, jspm, and TypeScript
+This is a simple demo how to setup a project that uses TypeScript, Express 4, Angular 2, Sass 3, Gulp 3, jspm, BrowserSync, and nodemon.
 
 ## Installation
 
