@@ -46,7 +46,7 @@ only individual files need to be transpiled and built, and not the whole project
 2. The live reloading server is listening by default on `http://localhost:3001` and the
 non-live reloading server is still available port 3000.
 
-Alternatively, for Linux based operating systems you can run `./scripts/hack.sh`
+Alternatively, for Linux based operating systems you can run `./scripts/dev.sh`
 
 ##Credits
 
