@@ -4,7 +4,7 @@ popd > /dev/null
 (cd $SCRIPTPATH/../ &&
   ./scripts/clean.sh && 
   npm i &&
-  tsd install &&
+  $(npm bin)/tsd install &&
   gulp build &&
-  jspm i
+  $(npm bin)/jspm i
 )

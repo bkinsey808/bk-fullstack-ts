@@ -28,7 +28,9 @@
   "author": "Ben Kinsey",
   "license": "AGPL-3.0",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "jspm": "^0.16.11",
+    "tsd": "^0.6.5"
   },
   "devDependencies": {
     "browser-sync": "^2.9.8",
@@ -39,7 +41,7 @@
     "gulp-sass": "^2.0.4",
     "gulp-typescript": "^2.8.1",
     "gulp-watch": "^4.3.5",
-    "jspm": "~0.16.6",
+    "nodemon": "^1.7.1",
     "run-sequence": "^1.1.2"
   },
   "jspm": {

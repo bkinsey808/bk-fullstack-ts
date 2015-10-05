@@ -2,6 +2,6 @@ pushd `dirname $0` > /dev/null
 SCRIPTPATH=`pwd`
 popd > /dev/null
 (cd $SCRIPTPATH/../ &&
-  jspm unbundle &&
-  nodemon dist/server.js
+  $(npm bin)/jspm unbundle &&
+  $(npm bin)/nodemon dist/server.js
 )
