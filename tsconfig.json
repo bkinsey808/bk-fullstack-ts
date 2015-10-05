@@ -26,6 +26,8 @@
         "./typings/angular2/angular2.d.ts",
         "./typings/angular2/http.d.ts",
         "./typings/angular2/router.d.ts",
+        "./typings/browser-sync/browser-sync.d.ts",
+        "./typings/chokidar/chokidar.d.ts",
         "./typings/es6-promise/es6-promise.d.ts",
         "./typings/express/express.d.ts",
         "./typings/mime/mime.d.ts",
