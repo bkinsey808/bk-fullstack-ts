@@ -1,5 +1,9 @@
 #bk-fullstack-ts
 
+## Update
+I'm working project that replaced jspm with webpack
+[bk-ng2-webpack](https://github.com/bkinsey808/bk-ng2-webpack)
+
 ## Synopsis
 
 This is a simple demo how to setup a project that uses TypeScript, Express 4, Angular 2, Sass 3, Gulp 3, jspm, BrowserSync, and nodemon.
@@ -16,7 +20,7 @@ For server side live reloading, this project requires [nodemon](https://github.c
 
 Alternatively, for Linux based operating systems you can run `./scripts/setup.sh`
 
-This will install your node dependencies, TypeScript definitions, will run an initial build, and will install frontend dependencies. 
+This will install your node dependencies, TypeScript definitions, will run an initial build, and will install frontend dependencies.
 
 ## Use bundled mode in production (with bundling, e.g. without http/2)
 1. run `jspm bundle app/app.component --inject`
@@ -28,10 +32,10 @@ Alternatively, for Linux based operating systems you can run `./scripts/prod_bun
 This causes jspm to bundle the JavaScript (transpiled from TypeScript) files into a single file,
 which significantly reduces the number of http requests and in HTTP 1, initial load time. It is not ideal for dev or HTTP/2.
 
-The `--inject` flag specifically makes sure to inject a script tag pointing to this new bundle into index.html. It is assumed that you have system.js and config.js already in your index.html page since TypeScript does not currently support self executing (sfx) bundling. Due to this limitation, we must call `jspm unbundle` when switching back and forth between bundled and unbundled mode. 
+The `--inject` flag specifically makes sure to inject a script tag pointing to this new bundle into index.html. It is assumed that you have system.js and config.js already in your index.html page since TypeScript does not currently support self executing (sfx) bundling. Due to this limitation, we must call `jspm unbundle` when switching back and forth between bundled and unbundled mode.
 
 ## Use unbundled mode in production (without bundling, e.g. for http/2)
-1. run `jspm unbundle` 
+1. run `jspm unbundle`
 2. run the server with `node dist/server.js`
 3. The production server is now listening at `http://localhost:3000`
 
